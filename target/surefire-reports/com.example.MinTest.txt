@@ -1,0 +1,28 @@
+-------------------------------------------------------------------------------
+Test set: com.example.MinTest
+-------------------------------------------------------------------------------
+Tests run: 10, Failures: 2, Errors: 4, Skipped: 0, Time elapsed: 0.034 s <<< FAILURE! - in com.example.MinTest
+testMin[4](com.example.MinTest)  Time elapsed: 0.001 s  <<< ERROR!
+java.lang.IllegalArgumentException: Min.min
+	at com.example.MinTest.testMin(MinTest.java:147)
+
+testMin[5](com.example.MinTest)  Time elapsed: 0.001 s  <<< ERROR!
+java.lang.NullPointerException: Cannot invoke "java.lang.Comparable.compareTo(Object)" because "comp" is null
+	at com.example.MinTest.testMin(MinTest.java:147)
+
+testMin[6](com.example.MinTest)  Time elapsed: 0 s  <<< ERROR!
+java.lang.ClassCastException: class java.lang.String cannot be cast to class java.lang.Integer (java.lang.String and java.lang.Integer are in module java.base of loader 'bootstrap')
+	at com.example.MinTest.testMin(MinTest.java:147)
+
+testMin[7](com.example.MinTest)  Time elapsed: 0 s  <<< ERROR!
+java.lang.NullPointerException: Min.min
+	at com.example.MinTest.testMin(MinTest.java:147)
+
+testMin[8](com.example.MinTest)  Time elapsed: 0.001 s  <<< FAILURE!
+java.lang.AssertionError: Should not return the expected (incorrect) value expected:<2> but was:<1>
+	at com.example.MinTest.testMin(MinTest.java:150)
+
+testMin[9](com.example.MinTest)  Time elapsed: 0 s  <<< FAILURE!
+java.lang.AssertionError: Should not return the expected (incorrect) value expected:<b> but was:<a>
+	at com.example.MinTest.testMin(MinTest.java:150)
+
